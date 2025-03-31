@@ -1,5 +1,6 @@
 {
   "homepage": "https://lmmurphy0808.github.io/bakeryshop",
+  "name": "bakeryshop",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
