@@ -1,5 +1,6 @@
 {
-  "name": "react-spring-2025/my-app",
+  "homepage": "/bakeryshop",
+  "name": "bakeryshop/my-app",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
