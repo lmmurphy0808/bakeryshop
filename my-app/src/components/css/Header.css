@@ -12,7 +12,6 @@
     margin: 0;
 }
 
-/* Style the "Baking Heaven" text to match the nav bar color */
 .main-header .baking-heaven {
     color: #c4b7c4; /* Adjust this to match your nav bar color */
     text-decoration: none;

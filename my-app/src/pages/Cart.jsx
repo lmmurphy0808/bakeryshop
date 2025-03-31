@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../css/Delivery.css';
+import './css/Delivery.css';
 
 function Cart() {
   useEffect(() => {
