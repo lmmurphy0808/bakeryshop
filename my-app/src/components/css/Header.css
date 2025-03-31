@@ -1,5 +1,19 @@
-header {
-    background:lightpink;
-    text-align:center;
-    padding:10px;
+.main-header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    font-family: 'Playfair Display', serif;
+}
+
+.main-header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the "Baking Heaven" text to match the nav bar color */
+.main-header .baking-heaven {
+    color: #c4b7c4; /* Adjust this to match your nav bar color */
+    text-decoration: none;
 }
