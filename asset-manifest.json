@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bakeryshop/static/css/main.0cf58c27.css",
+    "main.js": "/bakeryshop/static/js/main.e654a687.js",
+    "index.html": "/bakeryshop/index.html",
+    "main.0cf58c27.css.map": "/bakeryshop/static/css/main.0cf58c27.css.map",
+    "main.e654a687.js.map": "/bakeryshop/static/js/main.e654a687.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cf58c27.css",
+    "static/js/main.e654a687.js"
+  ]
+}
