@@ -1,33 +1,26 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
 import './css/Orders.css';
 
 function Orders() {
   return (
     <main>
       <div className="main-header">
-        <ul className="nav">
-            <li><a href="/">The Baking Haven</a></li>
-          <li><a href="/recipes">Recipes</a></li>
-          <li><a href="/tipsandtricks">Tips and Tricks</a></li>
-          <li><a href="/orders">Orders</a></li>
-          <li><a href="/about">About Me</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/contact">Contact Me</a></li>
-        </ul>
+        <Navigation />
       </div>
 
       <div className="cart-container">
-        <button id="viewCart" onClick={() => window.location.href='/cart'}>Your Cart</button>
+        <button id="viewCart" onClick={() => window.location.href='/Cart'}>Your Cart</button>
       </div>
 
       <div className="orders">
         <h1>Welcome to the ordering page! We offer two methods of ordering:</h1>
         <div className="order-methods">
           <div className="method">
-            <li><a href="/delivery">Delivery</a></li>
+            <li><a href="/Delivery">Delivery</a></li>
           </div>
           <div className="method">
-            <li><a href="/pickup">Pickup</a></li>
+            <li><a href="/Pickup">Pickup</a></li>
           </div>
         </div>
 

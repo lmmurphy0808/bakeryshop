@@ -2,13 +2,13 @@
   "name": "bakeryshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lmmurphy0808.github.io/bakeryshop",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.30.0",
-    "react-scripts": "5.0.1"
-  },
+    "react-scripts": "5.0.1",
+    "main": "index.js"
+  },    
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
@@ -20,16 +20,15 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmmurphy0808/bakeryshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmmurphy0808/bakeryshop/issues"
+  },
+  "homepage": "https://github.com/lmmurphy0808/bakeryshop#readme"
 }

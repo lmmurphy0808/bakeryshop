@@ -16,16 +16,14 @@ function App() {
   return(
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="About" element={<About />} />
-          <Route path="TipsAndTricks" element={<TipsAndTricks />} />
-          <Route path="Orders" element={<Orders />} />
-          <Route path="Gallery" element={<Gallery />} />
-          <Route path="Contact" element={<Contact />} />
-          <Route path="Recipes" element={<Recipes />} />
-          <Route path="*" element={<Nopage/>} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="About" element={<About />} />
+        <Route path="TipsAndTricks" element={<TipsAndTricks />} />
+        <Route path="Orders" element={<Orders />} />
+        <Route path="Gallery" element={<Gallery />} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Recipes" element={<Recipes />} />
+        <Route path="*" element={<Nopage/>} />
       </Routes>
     </Router>
   );

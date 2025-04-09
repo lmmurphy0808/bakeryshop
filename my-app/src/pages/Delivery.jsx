@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
 import './css/Delivery.css';
 
 function Delivery() {
@@ -6,13 +7,13 @@ function Delivery() {
     e.preventDefault();
     // Simulate adding to cart
     alert("Order placed and added to cart!");
-    window.location.href = "/cart";
+    window.location.href = "/Cart";
   };
 
   return (
     <div>
       <div className="cart-container">
-        <button id="viewCart" onClick={() => window.location.href = '/cart'}>
+        <button id="viewCart" onClick={() => window.location.href = '/Cart'}>
           Your Cart
         </button>
       </div>
@@ -38,7 +39,7 @@ function Delivery() {
 
           <button type="submit">Place Order</button>
         </form>
-        <button onClick={() => window.location.href = '/orders'}>Back to Orders</button>
+        <button onClick={() => window.location.href = '/Orders'}>Back to Orders</button>
       </div>
     </div>
   );

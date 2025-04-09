@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Navigation from '../components/Navigation';
 import './css/Delivery.css';
 
 function Cart() {
@@ -27,13 +28,14 @@ function Cart() {
   return (
     <div>
       <div className="main-header">
-        <div className="navbar"><li><a href="/">The Baking Haven</a></li></div>
         <ul className="nav">
-          <li><a href="/recipes">Recipes</a></li>
-          <li><a href="/tipsandtricks">Tips and Tricks</a></li>
-          <li><a href="/orders">Orders</a></li>
-          <li><a href="/aboutme">About Me</a></li>
-          <li><a href="/contact-me">Contact Me</a></li>
+          <li><a href="/">The Baking Haven</a></li>
+          <li><a href="/Recipes">Recipes</a></li>
+          <li><a href="/TipsAndTricks">Tips and Tricks</a></li>
+          <li><a href="/Orders">Orders</a></li>
+          <li><a href="/About">About Me</a></li>
+          <li><a href="/Gallery">Gallery</a></li>
+          <li><a href="/Contact">Contact Me</a></li>
         </ul>
       </div>
 
@@ -46,7 +48,7 @@ function Cart() {
 
           <div className="cart-buttons">
             <button onClick={clearCart}>Clear Cart</button>
-            <button onClick={() => window.location.href = '/orders'}>Back to Orders</button>
+            <button onClick={() => window.location.href = '/Orders'}>Back to Orders</button>
           </div>
         </div>
       </main>

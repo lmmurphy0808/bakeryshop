@@ -18,31 +18,42 @@
     color: #c4b7c4; /* soft lavender color */
 }
 
+.navigation {
+    position: relative;
+}
+
+.nav-toggle {
+    background-color: #c4b7c4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 .nav {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px; /* more space between items */
+    margin: 0;
+    display: none; /* Hide the nav by default */
+}
+
+.nav.open {
+    display: block; /* Show the nav when open */
 }
 
 .nav li {
-    display: inline;
+    margin: 10px 0;
 }
 
-.nav a {
+.nav li a {
     text-decoration: none;
-    color: #c4b7c4;
-    font-size: 18px;
-    padding: 6px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #333;
 }
 
-.nav a:hover {
-    background-color: #f5f5f5;
-    color: #a69aa6;
+.nav li a:hover {
+    color: #c4b7c4;
 }
 
 /* Mobile responsive */
