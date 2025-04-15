@@ -1,0 +1,43 @@
+/* Gallery.css */
+.gallery {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .cookie-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .cookie-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .cookie-card p {
+    margin-bottom: 8px;
+  }
+  
+  .cookie-card p:nth-child(3) {
+    font-weight: bold;
+  }
+  
+  p {
+    color: #777;
+  }
+  

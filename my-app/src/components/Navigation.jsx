@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import './css/Navigation.css';
 
 function Navigation() {
-  const [isNavOpen, setIsNavOpen] = useState(false); // State to track if the nav is open
+  const [isNavOpen, setIsNavOpen] = useState(false);  
 
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen); // Toggle the nav state
+    setIsNavOpen(!isNavOpen); 
   };
 
   return (
     <nav className="navigation">
-      <button className="nav-toggle" onClick={toggleNav}>
+      <button className="nav-toggle" onClick={toggleNav} aria-label="Toggle Navigation">
         {isNavOpen ? 'Close Menu' : 'Open Menu'}
       </button>
       <ul className={`nav ${isNavOpen ? 'open' : ''}`}>

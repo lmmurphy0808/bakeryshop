@@ -22,6 +22,7 @@
     position: relative;
 }
 
+/* Toggle Button */
 .nav-toggle {
     background-color: #c4b7c4;
     color: #fff;
@@ -30,26 +31,32 @@
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 10px;
+    display: none; /* Hidden by default, shown only on mobile */
 }
 
+/* Navigation Menu */
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: none; /* Hide the nav by default */
+    display: flex; /* Default behavior on larger screens */
+    justify-content: center;
 }
 
 .nav.open {
-    display: block; /* Show the nav when open */
+    display: flex; /* Show the nav when open */
+    flex-direction: column; /* Stack items vertically */
 }
 
 .nav li {
-    margin: 10px 0;
+    margin: 10px 20px; /* Space out items */
 }
 
 .nav li a {
     text-decoration: none;
     color: #333;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 .nav li a:hover {
@@ -58,10 +65,22 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+    /* Show the toggle button on mobile */
+    .nav-toggle {
+        display: block;
+        font-size: 24px;
+    }
+
+    /* Hide nav items on mobile until the toggle is clicked */
     .nav {
+        display: none;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+    }
+
+    /* When the menu is open, show the nav items */
+    .nav.open {
+        display: flex;
     }
 
     .nav li {
