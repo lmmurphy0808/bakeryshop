@@ -1,24 +1,27 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import Navigation from '../components/Navigation';
-import './css/Delivery.css';
+import './css/Pickup.css';
 
 function Pickup() {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Pickup order placed and added to cart!");
-    window.location.href = "/Cart";
+    // Simulate adding to cart
+    alert("Pickup order placed!");
+    navigate("/Cart"); // Navigate to the Cart page
   };
 
   return (
     <div>
       <div className="cart-container">
-        <button id="viewCart" onClick={() => window.location.href = '/Cart'}>
+        <button id="viewCart" onClick={() => navigate('/Cart')}>
           Your Cart
         </button>
       </div>
 
       <div className="container">
-
         <h1>Pickup Order</h1>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
@@ -31,17 +34,13 @@ function Pickup() {
             <option value="cookie-bar">Cookie Bar</option>
           </select>
 
-          <label htmlFor="time">Pickup Time:</label>
-          <input type="time" id="time" name="time" required />
+          <label htmlFor="pickup-time">Pickup Time:</label>
+          <input type="time" id="pickup-time" name="pickup-time" required />
 
           <button type="submit">Place Order</button>
         </form>
-        <button onClick={() => window.location.href = '/Orders'}>Back to Orders</button>
+        <button onClick={() => navigate('/Orders')}>Back to Orders</button> {/* Use navigate for navigation */}
       </div>
-
-      <footer>
-        <p>The Baking Haven</p>
-      </footer>
     </div>
   );
 }

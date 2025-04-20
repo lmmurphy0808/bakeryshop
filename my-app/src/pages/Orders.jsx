@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Navigation from '../components/Navigation';
 import './css/Orders.css';
 
@@ -17,10 +18,10 @@ function Orders() {
         <h1>Welcome to the ordering page! We offer two methods of ordering:</h1>
         <div className="order-methods">
           <div className="method">
-            <li><a href="/Delivery">Delivery</a></li>
+            <li><Link to="/Delivery">Delivery</Link></li> {/* Use Link for navigation */}
           </div>
           <div className="method">
-            <li><a href="/Pickup">Pickup</a></li>
+            <li><Link to="/Pickup">Pickup</Link></li> {/* Use Link for navigation */}
           </div>
         </div>
 
