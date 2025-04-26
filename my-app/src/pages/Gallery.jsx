@@ -3,23 +3,24 @@ import axios from 'axios';
 import Navigation from '../components/Navigation';
 import './css/Gallery.css';
 
-function Gallery() {
-  const [cookies, setCookies] = useState([]);
+const Gallery = () => {
+  const [ cookies, setCookies ] = useState([]);
 
+  //useEffect
   useEffect(() => {
-    const fetchCookies = async () => {
-      try {
-        const response = await axios.get('http://localhost:3000/api/cookies');
-        setCookies(response.data);
-      } catch (error) {
-        console.error('Error fetching cookie data:', error);
-      }
-    };
-
-    fetchCookies();
+    (async () => {
+      const response = await axios.get(
+         //"https://lmmurphy0808.github.io/json/gallery.json"
+       // "http://localhost:3001/api/cookies"
+       "https://bakery-backend-t744.onrender.com/api/cookies/"
+      );
+      setCookies(response.data);
+    })();
   }, []);
 
-  return (
+  
+
+    return (
     <main>
       <div className="main-header">
         <Navigation />
@@ -36,7 +37,8 @@ function Gallery() {
         ))}
       </div>
     </main>
-  );
+  ); 
+  
 }
 
 export default Gallery;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import './css/Home.css';
+import axios from 'axios';
 
 function Home() {
   return (
