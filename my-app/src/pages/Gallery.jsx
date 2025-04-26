@@ -11,8 +11,8 @@ const Gallery = () => {
     (async () => {
       const response = await axios.get(
          //"https://lmmurphy0808.github.io/json/gallery.json"
-       "http://localhost:3001/api/cookies"
-       //"https://bakery-backend-t744.onrender.com/api/cookies/"
+       //"http://localhost:3001/api/cookies"
+       "https://bakery-backend-t744.onrender.com/api/cookies/"
       );
       setCookies(response.data);
     })();
