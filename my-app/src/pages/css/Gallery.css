@@ -41,3 +41,16 @@
     color: #777;
   }
   
+
+  #home {
+    position: relative;
+  }
+
+  #add-cookie {
+    color: white;
+    background: #c4b7c4;
+    position: absolute;
+    right: 1%;
+    top: -40px;
+    border: none;
+  }
