@@ -17,7 +17,6 @@ const Gallery = () => {
         "https://bakery-backend-t744.onrender.com/api/cookies/"
       );
       setCookies(response.data);
-      
     })();
   }, []);
 
@@ -45,14 +44,13 @@ const Gallery = () => {
         {showAddDialog ? <AddDialog closeDialog={closeAddDialog} addCookiePlan={addCookiePlan} /> : ""}
         <h1>Cookie Recipes Gallery</h1>
         {cookies.map((cookie) => (
-          <div className="cookie-card">
-          <CookiePlan
-            key={cookie.name}
-            name={cookie.name}
-            level={cookie.level}
-            rating={cookie.rating}
-            main_image={cookie.main_image}
-          />
+          <div className="cookie-card" key={cookie._id || cookie.name}>  {/* Use unique id or name */}
+            <CookiePlan
+              name={cookie.name}
+              level={cookie.level}
+              rating={cookie.rating}
+              main_image={cookie.main_image}
+            />
           </div>
         ))}
       </div>
